@@ -1,0 +1,67 @@
+{
+  "name": "@cemalidev/trate",
+  "version": "1.4.6",
+  "type": "module",
+  "description": "Terminal-based currency tracker - convert fiat, crypto, and precious metals instantly",
+  "main": "dist/index.js",
+  "bin": {
+    "trate": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "node build.cjs",
+    "start": "node dist/index.js",
+    "dev": "node build.cjs && node dist/index.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests --ext .ts",
+    "lint:fix": "eslint src tests --ext .ts --fix",
+    "prepare": "husky install",
+    "link": "npm run build && npm link"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "keywords": [
+    "currency",
+    "exchange",
+    "rate",
+    "cli",
+    "crypto",
+    "bitcoin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "conf": "^12.0.0",
+    "figlet": "^1.11.0",
+    "inquirer": "^13.3.2",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.0.0",
+    "@types/node-fetch": "^2.6.13",
+    "@typescript-eslint/eslint-plugin": "^8.57.2",
+    "@typescript-eslint/parser": "^8.57.2",
+    "@vitest/coverage-v8": "^4.1.1",
+    "esbuild": "^0.27.4",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^9.1.2",
+    "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.3.0",
+    "vitest": "^4.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
