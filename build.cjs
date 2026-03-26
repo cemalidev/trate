@@ -18,10 +18,11 @@ async function build() {
   });
 
   fs.chmodSync('dist/index.js', '755');
+  fs.copyFileSync('package.json', 'dist/package.json');
   console.log('Build complete!');
 }
 
-build().catch((err) => {
+build().catch(err => {
   console.error(err);
   process.exit(1);
 });

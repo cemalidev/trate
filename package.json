@@ -1,6 +1,6 @@
 {
   "name": "@cemalidev/trate",
-  "version": "1.4.6",
+  "version": "1.4.14",
   "type": "module",
   "description": "Terminal-based currency tracker - convert fiat, crypto, and precious metals instantly",
   "main": "dist/index.js",

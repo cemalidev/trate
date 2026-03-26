@@ -128,5 +128,4 @@ docs/.doctrees/
 # =========================================
 # Development Notes (Private)
 # =========================================
-docs/
-.docs/
+documents/

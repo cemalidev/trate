@@ -1,3 +1,5 @@
+![trate](docs/trate.png)
+
 # Trate
 
 > Terminal-based currency tracker - convert fiat, crypto, and precious metals instantly.
@@ -57,6 +59,7 @@ trate list
 | `trate list`                 | Show favorites dashboard             |
 | `trate set-lang <lang>`      | Change language (tr, en, de, fr, es) |
 | `trate refresh`              | Clear cache                          |
+| `trate update`               | Check for updates                    |
 | `trate help`                 | Show help                            |
 
 ## Custom Aliases
